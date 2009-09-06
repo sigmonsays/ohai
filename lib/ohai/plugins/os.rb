@@ -35,6 +35,8 @@ when /mswin/
   # platforms built upon the Windows_NT kernel and have access to win32 or win64
   # subsystems.
   os "windows"
+when /solaris2/
+  os "solaris"
 else
   os languages[:ruby][:host_os]
 end
